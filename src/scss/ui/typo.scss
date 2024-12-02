@@ -1,0 +1,17 @@
+.green-text {
+    color: #64d370;
+}
+
+.desc-bold {
+    font-weight: 700;
+}
+
+._form-error {
+    & .feedback__order-phone, .feedback__order-name  {
+        color: #f87676;
+        &::after{
+            background-color: #f87676;
+        }
+    }
+
+}

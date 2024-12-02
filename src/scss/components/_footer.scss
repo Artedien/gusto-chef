@@ -1,0 +1,158 @@
+.footer {
+    // .footer__container
+    box-shadow: 0 0 30px 0 rgba(86, 86, 86, 0.25);
+    background: #f5faff;
+    padding: 4rem 0;
+    margin-bottom: 12rem;
+    &__container {
+        width: 118rem;
+    }
+
+    // .footer__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 48em) {
+            flex-direction: column;
+            gap: 6rem;
+        }
+    }
+
+    // .footer__nav-box
+
+    &__nav-box {
+    }
+
+    // .footer__nav
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1.7rem;
+        font-weight: 700;
+        font-size: 2rem;
+        @media (max-width: 48em) {
+            display: none;
+        }
+    }
+
+    // .footer__nav-item
+
+    &__nav-item {
+    }
+
+    // .footer__nav-link
+
+    &__nav-link {
+    }
+
+    // .footer__logo-box
+
+    &__logo-box {
+    }
+
+    // .footer__logo-link
+
+    &__logo-link {
+    }
+
+    // .footer__logo-img
+
+    &__logo-img {
+    }
+
+    // .footer__contact-box
+
+    &__contact-box {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-end;
+    }
+
+    // .footer__contact-terms
+
+    &__contact-terms {
+        max-width: 19.6rem;
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: right;
+        @media (max-width: 48em) {
+            display: none;
+        }
+    }
+
+    // .footer__contact-faq
+
+    &__contact-faq {
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: right;
+        @media (max-width: 48em) {
+            display: none;
+        }
+    }
+
+    // .footer__social-box
+
+    &__social-box {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    // .footer__social-insta
+
+    &__social-insta {
+    }
+
+    // .footer__insta-img
+
+    &__insta-img {
+    }
+
+    // .footer__social-fb
+
+    &__social-fb {
+    }
+
+    // .footer__fb-img
+
+    &__fb-img {
+    }
+
+    // .footer__social-viber
+
+    &__social-viber {
+    }
+
+    // .footer__viber-img
+
+    &__viber-img {
+    }
+
+    // .footer__social-tg
+
+    &__social-tg {
+    }
+
+    // .footer__tg-img
+
+    &__tg-img {
+    }
+
+    // .footer__phone-box
+
+    &__phone-box {
+    }
+
+    // .footer__phone
+
+    &__phone {
+        font-weight: 700;
+        font-size: 2rem;
+        color: #64d370;
+        font-family: 'Montserrat', sans-serif;
+    }
+}

@@ -1,0 +1,99 @@
+.widget {
+    // .widget-box
+
+    &-box {
+        position: absolute;
+        width: min-content;
+        @media (max-width: 48em) {
+            display: none;
+        }
+    }
+
+    // .widget__menu-list
+
+    &__menu-list {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        padding: 5rem;
+    }
+
+    // .widget__menu-item
+
+    &__menu-item {
+        width: fit-content;
+    }
+
+    // .widget__menu-link-text
+
+    &__menu-link-text {
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 100%;
+        letter-spacing: 0.03em;
+        color: #64d370;
+        padding: 0 3.8rem 0 0;
+        text-align: center;
+        pointer-events: none;
+    }
+
+    // .widget__menu-link
+
+    &__menu-link {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        overflow: hidden;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 19rem;
+        background: #f5faff;
+        box-shadow: 0 0 30px 0 rgba(86, 86, 86, 0.25);
+        transition: width 0.3s;
+        cursor: pointer;
+
+        &.active {
+            width: 100%;
+            & .widget__menu-link-img svg path:not(.svg-stroke) {
+                fill: #64d370;
+                stroke: none;
+            }
+            & .widget__menu-link-img svg path.svg-stroke {
+                stroke: #64d370;
+            }
+
+            &:hover {
+                width: 100%;
+            }
+        }
+        &:hover {
+            width: 10.8rem;
+
+            & .widget__menu-link-img svg path:not(.svg-stroke) {
+                fill: #64d370;
+                stroke: none;
+            }
+            & .widget__menu-link-img svg path.svg-stroke {
+                stroke: #64d370;
+            }
+        }
+    }
+
+    // .widget__menu-link-img
+
+    &__menu-link-img {
+        width: 7rem;
+        height: 7rem;
+        object-fit: cover;
+        flex-shrink: 0;
+        pointer-events: none;
+        & svg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        & svg path {
+            transition: fill 0.3s, stroke 0.3s;
+        }
+    }
+}
